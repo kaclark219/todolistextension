@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My To-Do List Extension</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/todo-logo.png">
+</head>
+<body>
+<div class="container">
+    <div class="title-bar">
+        <b>My To-Do List</b>
+        <div class="right">- o x</div>
+    </div>
+    <div class="inner-list">
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Click here to type & add your task!">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+        </ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

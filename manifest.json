@@ -1,0 +1,10 @@
+{
+    "name": "My To-Do",
+    "description": "A to-do list with a simple interface for all your task tracking needs while using Chrome.",
+    "version": "1.0",
+    "icons": {
+        "128": "todo-logo-128",
+        "48": "todo-logo-48"
+    },
+    "manifest_version": 3
+}

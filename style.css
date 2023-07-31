@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Calibri', sans-serif;
+    box-sizing: border-box;
+}
+/*what the whole thing is encased in*/
+.container{
+    background: #EFEFEF;
+    border-radius: 5px;
+    border: 1px solid #737373;
+    width: 100%;
+    min-height: 100vh;
+}
+/*the actual list for the user to edit*/
+.inner-list{
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+/*for to-do list title*/
+.title-bar{
+    background: #FF3131;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*for the cute symbols in right corner*/
+.right {
+    float: right;
+    margin-right: 5px;
+    font-family: 'Calibri', sans-serif;
+    line-height: 12px;
+    font-size: 18px;
+}
+.row{
+    display: flex;
+    align-items: center; /*may want to change*/
+    justify-content: space-between;
+    background: #EFEFEF;
+    border-radius: 10px;
+    padding-left:20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: 1px solid #737373;
+    outline: none;
+    padding: 4px 15px;
+    background: white;
+    color: #737373;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #737373;
+    color: white; 
+}
+.button-1{
+    border: 1px solid #737373;
+    outline: none;
+    padding: 8px 25px;
+    background: #737373;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button-1:hover {
+    background-color: white;
+    color: #737373; 
+}
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 5px 3px 3px 25px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+li:hover{
+    cursor: pointer;
+    color: #737373;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 0%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 3px;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/actualcheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 3px;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #EFEFEF;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    color: #737373;
+}
+ul li:hover > span{
+    color: #737373;
+}
